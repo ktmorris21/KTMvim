@@ -1,3 +1,5 @@
+" To install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,6 +18,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'joonty/vdebug'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/nerdtree'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -60,3 +64,21 @@ set autoindent
 set breakindent
 " Not only will wrap indent, but indent an additional 4 spaces
 set breakindentopt=shift:4
+let g:vdebug_options= {                                                                                                                                                                                                                                                   
+    \    "port" : 9000,                                                                                                                                                                                                                                                       
+    \    "server" : '',                                                                                                                                                                                                                                                       
+    \    "timeout" : 20,                                                                                                                                                                                                                                                      
+    \    "on_close" : 'detach',                                                                                                                                                                                                                                               
+    \    "break_on_open" : 1,                                                                                                                                                                                                                                                 
+    \    "ide_key" : '',                                                                                                                                                                                                                                                      
+    \    "path_maps" : {},                                                                                                                                                                                                                                                    
+    \    "debug_window_level" : 0,                                                                                                                                                                                                                                            
+    \    "debug_file_level" : 2,                                                                                                                                                                                                                                              
+    \    "debug_file" : "~/debug.txt",                                                                                                                                                                                                                                                   
+    \    "watch_window_style" : 'expanded',                                                                                                                                                                                                                                   
+    \    "marker_default" : '⬦',                                                                                                                                                                                                                                              
+    \    "marker_closed_tree" : '▸',                                                                                                                                                                                                                                          
+    \    "marker_open_tree" : '▾'                                                                                                                                                                                                                                             
+    \}                                    
+set laststatus=2
+let g:Powerline_symbols = 'fancy'
