@@ -1,5 +1,8 @@
 " To install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+" After you have vundle setup, run :PluginInstall to install the other plugins
+" After it's done, exit and restart Vim
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -18,8 +21,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'joonty/vdebug'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'Lokaltog/vim-powerline'
+"Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -81,4 +86,8 @@ let g:vdebug_options= {
     \    "marker_open_tree" : '▾'                                                                                                                                                                                                                                             
     \}                                    
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
+" Maintains terminal transparency
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
