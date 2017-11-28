@@ -91,3 +91,6 @@ let g:airline_powerline_fonts = 1
 " Maintains terminal transparency
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
+" Load NERDTree at vim startup
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
