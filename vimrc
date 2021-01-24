@@ -61,7 +61,8 @@ set number
 set ruler
 syntax on
 set t_Co=256
-colorscheme CandyPaper
+"colorscheme CandyPaper
+colorscheme evening
 filetype plugin indent on
 "These next two make tabs = 4 spaces
 " show existing tab with 4 spaces width
